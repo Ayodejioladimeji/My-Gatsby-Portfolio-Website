@@ -31,8 +31,8 @@ export const Blogs = () => {
     return(
       <section className="loading">
         <h1>Loading Blogs...</h1>
-        <img src={round} alt="roller"/>
-        <p>Please check your Internet Connection...</p>
+        <img src={round} alt="roller" data-aos="fade-right"/>
+        <p data-aos="flip-right">Please check your Internet Connection...</p>
       </section>
     )
   }
@@ -40,13 +40,13 @@ export const Blogs = () => {
 
   return (
     <section className="section blog-section">
-      <Title title="My Blogs" />
+      <Title data-aos="fade-down" title="My Blogs" />
       <div className="section-center blogs-center">
         {blogs.map((blog, index) => {
           return <Blog key={index} {...blog} />
         })}
       </div>
-      <Link to="/blog" className="btn center-btn">
+      <Link to="/blog" className="btn center-btn" data-aos="fade-down">
         My Blogs
       </Link>
     </section>

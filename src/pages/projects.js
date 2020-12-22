@@ -27,7 +27,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects"/>
       <section className="projects-page">
-        <Title title="All Projects" />
+        <Title title="All Projects" data-aos="fade-up"/>
         <div className="section-center projects-center">
           {projects.map((project, index) => {
             return <Project key={index} {...project} />

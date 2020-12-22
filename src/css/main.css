@@ -833,6 +833,7 @@ THE SECTION OF THE PROJECTS
   background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
   opacity: 0.85;
   transition: var(--transition);
+  background:yellow;
 }
 
 .project:hover .project-img::after {

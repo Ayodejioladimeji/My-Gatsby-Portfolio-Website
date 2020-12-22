@@ -18,12 +18,12 @@ const About = () => {
                 <img src={image} alt="about-me" className="about-img"/>
                 <article className="about-text">
                   <Title title={title}/>
-                  <p>{info}</p>
+                  <p data-aos="flip-right">{info}</p>
                   <div className="about-stack">
                     {stack.map((data)=>{
                       const {id, stack} = data
                       return(
-                        <span key={id}>{stack}</span>
+                        <span key={id} data-aos="flip-right">{stack}</span>
                       )
                     })}
                   </div>

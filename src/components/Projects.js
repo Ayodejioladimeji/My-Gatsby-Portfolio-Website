@@ -31,9 +31,9 @@ const Projects = ({title}) => {
 
   if(loading){
     return(
-      <section className="loading">
-        <h1> My Projects Loading...</h1>
-        <img src={roll} alt="roller"/>
+      <section className="loading" data-aos="zoom-in">
+        <h1 data-aos="fade-down"> My Projects Loading...</h1>
+        <img src={roll} alt="roller" data-aos="fade-right"/>
       </section>
     )
   }
@@ -48,7 +48,7 @@ const Projects = ({title}) => {
         })}
       </div>
 
-      <Link to="/projects" className="btn center-btn">
+      <Link to="/projects" className="btn center-btn" data-aos="fade-up">
         projects
       </Link>
     </section>

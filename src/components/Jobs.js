@@ -30,7 +30,7 @@ const Jobas = () => {
   if(loading){
     return(
       <section className="loading" data-aos="fade-out">
-        <h1>Work Experience Loading...</h1>
+        <h1 data-aos="fade-down">Work Experience Loading...</h1>
         <img src={gear} alt="gear"/>
       </section>
     )

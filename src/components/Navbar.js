@@ -1,6 +1,7 @@
 import React from "react"
 import { FaPlusCircle, FaUikit } from "react-icons/fa"
 import PageLinks from "../constants/links"
+import {Link} from 'gatsby'
 
 
 const Navbar = ({toggleSidebar}) => {
@@ -10,9 +11,11 @@ const Navbar = ({toggleSidebar}) => {
 
         {/* THE SECTION OF THE NAV HEADER LOGO */}
         <div className="nav-header">
-          <button type="button" className="logo-btn">
-            <FaUikit/>
-          </button>
+          <Link to="/">
+            <button type="button" className="logo-btn">
+              <FaUikit/>
+            </button>
+          </Link>
         </div>
 
         {/* THE SECTION OF THE TOGGLE BUTTON */}
