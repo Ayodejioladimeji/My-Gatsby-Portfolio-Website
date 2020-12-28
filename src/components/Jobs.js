@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from "react"
 import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
-import { Link } from "gatsby"
 import Particles from 'react-particles-js'
 import gear from '../assets/gear.gif'
 

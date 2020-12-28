@@ -1,6 +1,7 @@
 import React from "react"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import Favicon from '../../public/layomi.png'
 
 const query = graphql`
   {
@@ -29,6 +30,7 @@ const SEO = ({ title }) => {
     <Helmet htmlAttributes={{ lang: "en" }} title={`${title} | ${siteTitle}`}>
       <meta name="description" content={siteDesc} />
       <meta name="image" content={image} />
+      <link rel="shortcut icon" href={Favicon}/>
       
       {/* twitter cards */}
       <meta name="twitter:card" content="summary_large_image" />

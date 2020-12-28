@@ -1,6 +1,16 @@
 [
     {
     "id": "recAGJfiU4CeaV0H",
+    "order": 8,
+    "title": "BUY.COM",
+    "stack": "REACT, CSS , BOOTSTRAP, STYLED-COMPONENT, NETLIFY",
+    "description": "Buy.com is an online portals that facilitate online transactions of goods and services through means of the transfer of information and funds over the Internet. You can purchase any series of mobile devices of your choice irrespective of the brands and manufacturers",
+    "github": "https://github.com/Ayodejioladimeji/buy.com",
+    "url" : "https://buydotcom.netlify.app",
+    "image" : "https://res.cloudinary.com/devsource/image/upload/v1609109737/buy_vrhhfj.png"
+    },
+    {
+    "id": "recAGJfiU4CeaV0H",
     "order": 7,
     "title": "SAKINWUMI LIMITED",
     "stack": "GATSBY, CSS , GRID-SYSTEM, NETLIFY",
