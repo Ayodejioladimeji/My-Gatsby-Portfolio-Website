@@ -1,5 +1,15 @@
 [
     {
+    "id": "recAGrfiU4heaV0H",
+    "order": 10,
+    "title": "HOME AND AWAY",
+    "stack": "REACT, CSS , BOOTSTRAP, STYLED-COMPONENT, NETLIFY",
+    "description": "Home and Away is a relaxation place, where you can enjoy your holiday with friends and families, Home and Away has beautiful and condusive facilities that will make you comfortable throughout your stay ",
+    "github": "https://github.com/Ayodejioladimeji/Home-and-Away",
+    "url" : "https://homeandaway.netlify.app",
+    "image" : "https://res.cloudinary.com/devsource/image/upload/v1611826071/away_r8kwam.png"
+    },
+    {
     "id": "recAGJfiU4heaV0H",
     "order": 9,
     "title": "BUY.COM",
