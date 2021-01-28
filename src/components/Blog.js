@@ -1,7 +1,7 @@
 import React from "react"
 
 
-const Blog = ({ title, image, slug, desc }) => {
+const Blog = ({ title, image, slug, desc, url }) => {
   return (
       <article className="blog">
         <img src={image} alt="blog-post" className="blog-img" />
@@ -9,7 +9,7 @@ const Blog = ({ title, image, slug, desc }) => {
           <h4>{title}</h4>
           <p>{desc}</p>
           <div className="blog-footer">
-           <a href="#" target="_blank">
+           <a href={url} target="_blank">
             <p>{slug}</p>
            </a>
           </div>

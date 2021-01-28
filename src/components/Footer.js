@@ -9,7 +9,7 @@ const Footer = () => {
           copyright&copy;{new Date().getFullYear()}
           <span> AYODEJI OLADIMEJI </span>
         </h4>
-        <small className="layo">Developed By @LayoBright &#128526; </small>
+        <small className="layo">Developed By @LayoBright <span role="img">&#128526;</span></small>
       </div>
     </footer>
   )

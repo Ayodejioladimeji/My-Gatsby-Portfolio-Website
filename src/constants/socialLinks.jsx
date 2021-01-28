@@ -1,9 +1,11 @@
 import React from "react"
+
 import {
   FaFacebookSquare,
   FaLinkedin,
   FaGithub,
   FaTwitterSquare,
+  FaDribbbleSquare,
 } from "react-icons/fa"
 
 const data = [
@@ -27,7 +29,14 @@ const data = [
     icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
     url: "https://twitter.com/LayoBright",
   },
+  {
+    id: 6,
+    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
+    url: "https://dribbble.com/LayoBright",
+  },
 ]
+
+
 const links = data.map(link => {
   return (
     <li key={link.id}>

@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 
-const url = "https://api.mocki.io/v1/329cd7dd"
+const url = "https://api.mocki.io/v1/c83dca7c"
 
 const ProjectsPage = () => {
   const [projects, setProjects] = useState([]);

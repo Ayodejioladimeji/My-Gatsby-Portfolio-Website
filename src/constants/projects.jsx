@@ -1,7 +1,7 @@
 [
     {
-    "id": "recAGJfiU4CeaV0H",
-    "order": 8,
+    "id": "recAGJfiU4heaV0H",
+    "order": 9,
     "title": "BUY.COM",
     "stack": "REACT, CSS , BOOTSTRAP, STYLED-COMPONENT, NETLIFY",
     "description": "Buy.com is an online portals that facilitate online transactions of goods and services through means of the transfer of information and funds over the Internet. You can purchase any series of mobile devices of your choice irrespective of the brands and manufacturers",
@@ -11,12 +11,22 @@
     },
     {
     "id": "recAGJfiU4CeaV0H",
+    "order": 8,
+    "title": "WEATHER TRACKER",
+    "stack": "HTML, CSS, JAVASCRIPT, JQUERY, NETLIFY",
+    "description": "Weather Tracker is a web app for tracking weather conditions all over the world. Weather Tracker gives accurate results using Geo-Locator to acccess users location.",
+    "github": "https://github.com/Ayodejioladimeji/Javascript-Weather-Tracker",
+    "url" : "https://my-weather-tracker.netlify.app",
+    "image" : "https://res.cloudinary.com/devsource/image/upload/v1611768480/tracker_qyu8rb.png"
+    },
+    {
+    "id": "recAGJfiU4CeaV0H",
     "order": 7,
-    "title": "SAKINWUMI LIMITED",
+    "title": "SAKINWUMI LIMITED -- still under construction",
     "stack": "GATSBY, CSS , GRID-SYSTEM, NETLIFY",
     "description": "Sakinwumi Limited is a Farming investment Limited that feeds the world, Sakinwumi farms produces fresh Tomatoes, Vegetables and also fresh fruits with different species. They are also into livestock production, and you can also get fresh eggs from them.",
     "github": "https://github.com",
-    "url" : "https://sakinwumi.netlify.ap",
+    "url" : "https://sakinwumi.netlify.app",
     "image" : "https://res.cloudinary.com/devsource/image/upload/v1608607505/sakinwu_ynw1lv.png"
     },
     {
@@ -26,7 +36,7 @@
     "stack": "GATSBY, SASS, CSS , BOOTSTRAP, NETLIFY",
     "description": "DevCareer is a Non-Profit organization that is focused on supporting upcoming developers with resources to excel into world class... Underdeveloped African countries are lacking when it comes to adequate resources to dive into Tech. DevCareer is focused on supporting these group of people.",
     "github": "https://github.com",
-    "url" : "https://devcareer2.netlif.app/",
+    "url" : "https://devcareer2.netlify.app/",
     "image" : "https://res.cloudinary.com/devsource/image/upload/v1606761648/devcareer_r5essu.png"
     },
     {

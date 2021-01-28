@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import round from '../assets/round.gif'
 
 
-const url = 'https://api.mocki.io/v1/cf128040'
+const url = 'https://api.mocki.io/v1/d8a09b24'
 
 export const Blogs = () => {
 
@@ -19,11 +19,11 @@ export const Blogs = () => {
     setTimeout(()=>{
       setBlogs(newJobs)
       setLoading(false)
-    },500);
+    },1500);
   }
 
   useEffect(() => {
-    // fetchBlog()
+    fetchBlog()
   }, [])
 
 
