@@ -1,5 +1,15 @@
 [
     {
+    "id": "recAGrfiU4heaV0J",
+    "order": 11,
+    "title": "CRYPTO TRACKER",
+    "stack": "REACT, CSS , BOOTSTRAP, NETLIFY",
+    "description": "Crypto Tracker is a cryptocurrency web application for tracking cryptocurrency prices, crypto tracker produces accurate data which bicoin users can rely on. ",
+    "github": "https://github.com/Ayodejioladimeji/crypto_tracker",
+    "url" : "https://cryptotrackers.netlify.app",
+    "image" : "https://res.cloudinary.com/devsource/image/upload/v1611947523/tra_bt5ylk.png"
+    },
+    {
     "id": "recAGrfiU4heaV0H",
     "order": 10,
     "title": "HOME AND AWAY",
