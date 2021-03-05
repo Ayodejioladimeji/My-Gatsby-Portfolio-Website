@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
@@ -6,22 +6,22 @@ import { Link } from "gatsby"
 import roll from '../assets/roll.gif'
 
 
-const url = "https://api.mocki.io/v1/8bed6364"
+const url = "https://api.mocki.io/v1/e5dc5572"
 
 
-const Projects = ({title}) => {
+const Projects = ({ title }) => {
 
   const [loading, setLoading] = useState(true)
   const [projects, setProjects] = useState([]);
 
 
-  const fetchProject = async ()=>{
+  const fetchProject = async () => {
     const response = await fetch(url)
     const newJobs = await response.json()
-    setTimeout(()=>{
+    setTimeout(() => {
       setProjects(newJobs)
       setLoading(false)
-    },12000);
+    }, 12000);
   }
 
   useEffect(() => {
@@ -29,11 +29,11 @@ const Projects = ({title}) => {
   }, [])
 
 
-  if(loading){
-    return(
+  if (loading) {
+    return (
       <section className="loading" data-aos="zoom-in">
         <h1 data-aos="fade-down"> My Projects Loading...</h1>
-        <img src={roll} alt="roller" data-aos="fade-right"/>
+        <img src={roll} alt="roller" data-aos="fade-right" />
       </section>
     )
   }

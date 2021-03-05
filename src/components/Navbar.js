@@ -20,7 +20,7 @@ const Navbar = ({toggleSidebar}) => {
 
         {/* THE SECTION OF THE TOGGLE BUTTON */}
         <button type="button" className="toggle-btn" onClick={toggleSidebar}>
-          <FaPlusCircle/>
+          <FaPlusCircle/> 
         </button>
 
         {/* THE SECTION OF THE PAGE LINKS */}

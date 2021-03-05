@@ -830,10 +830,10 @@ THE SECTION OF THE PROJECTS
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+  /* background: linear-gradient(to bottom right, var(--clr-primary-5), #222); */
   opacity: 0.85;
   transition: var(--transition);
-  background:yellow;
+  /* background:yellow; */
 }
 
 .project:hover .project-img::after {
@@ -1181,6 +1181,8 @@ About Page
   margin-right: 0.25rem;
   font-size: 1rem;
 }
+
+
 @media screen and (min-width: 992px) {
   .about-center {
     display: grid;

@@ -8,21 +8,21 @@ import SEO from "../components/SEO"
 const About = () => {
   return (
     <Layout>
-    <SEO title="About"/>
+      <SEO title="About" />
       <section className="about-page">
         <div className="about-center">
-          {about.map((item)=>{
-            const {title, info, image} = item
-            return(
+          {about.map((item) => {
+            const { title, info, image } = item
+            return (
               <>
-                <img src={image} alt="about-me" className="about-img"/>
+                <img src={image} alt="about-me" className="about-img" />
                 <article className="about-text">
-                  <Title title={title}/>
+                  <Title title={title} />
                   <p data-aos="flip-right">{info}</p>
                   <div className="about-stack">
-                    {stack.map((data)=>{
-                      const {id, stack} = data
-                      return(
+                    {stack.map((data) => {
+                      const { id, stack } = data
+                      return (
                         <span key={id} data-aos="flip-right">{stack}</span>
                       )
                     })}
