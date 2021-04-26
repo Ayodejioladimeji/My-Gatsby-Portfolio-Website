@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 import Title from "./Title"
 import Blog from "./Blog"
 import { Link } from "gatsby"
-import data from '../constants/Blog'
+import data from '../constants/blog'
 
 import round from '../assets/round.gif'
 
