@@ -8,7 +8,8 @@ const Layout = ({ children }) => {
   const [isOpen, setisOpen] = useState(false)
   const toggleSidebar = ()=>{
     setisOpen(!isOpen)
-  }
+  } 
+
   return (
     <>
       <Navbar toggleSidebar = {toggleSidebar}/>

@@ -2,37 +2,29 @@ import React, { useState, useEffect } from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
+import data from '../constants/projects'
 
 import roll from '../assets/roll.gif'
 
-
-const url = "https://api.mocki.io/v1/e5dc5572"
 
 
 const Projects = ({ title }) => {
 
   const [loading, setLoading] = useState(true)
-  const [projects, setProjects] = useState([]);
-
-
-  const fetchProject = async () => {
-    const response = await fetch(url)
-    const newJobs = await response.json()
-    setTimeout(() => {
-      setProjects(newJobs)
-      setLoading(false)
-    }, 12000);
-  }
+  const [projects, setProjects] = useState(data);
+  let featuredProjects = projects.filter(item=> item.featured === true);
 
   useEffect(() => {
-    fetchProject()
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
   }, [])
 
 
   if (loading) {
     return (
       <section className="loading" data-aos="zoom-in">
-        <h1 data-aos="fade-down"> My Projects Loading...</h1>
+        <h1 data-aos="fade-down"> My Projects Loading</h1>
         <img src={roll} alt="roller" data-aos="fade-right" />
       </section>
     )
@@ -43,7 +35,7 @@ const Projects = ({ title }) => {
     <section className="section projects">
       <Title title={title} />
       <div className="section-center projects-center">
-        {projects.map((project, index) => {
+        {featuredProjects.map((project, index) => {
           return <Project key={index} {...project} />
         })}
       </div>

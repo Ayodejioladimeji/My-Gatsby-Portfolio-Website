@@ -2,28 +2,21 @@ import React, { useState, useEffect } from "react"
 import Title from "./Title"
 import Blog from "./Blog"
 import { Link } from "gatsby"
+import data from '../constants/Blog'
 
 import round from '../assets/round.gif'
 
 
-const url = 'https://api.mocki.io/v1/1af72bc9'
-
 export const Blogs = () => {
 
   const [loading, setLoading] = useState(true)
-  const [blogs, setBlogs] = useState([]);
+  const [blogs, setBlogs] = useState(data);
 
-  const fetchBlog = async () => {
-    const response = await fetch(url)
-    const newJobs = await response.json()
-    setTimeout(() => {
-      setBlogs(newJobs)
-      setLoading(false)
-    }, 1500);
-  }
 
   useEffect(() => {
-    fetchBlog()
+    setTimeout(() => {
+      setLoading(false)
+    }, 3500);
   }, [])
 
 
@@ -32,7 +25,7 @@ export const Blogs = () => {
       <section className="loading">
         <h1>Loading Blogs...</h1>
         <img src={round} alt="roller" data-aos="fade-right" />
-        <p data-aos="flip-right">Please check your Internet Connection...</p>
+        <p data-aos="flip-right">Please check your Internet Connection</p>
       </section>
     )
   }

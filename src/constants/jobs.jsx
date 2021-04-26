@@ -1,4 +1,4 @@
-[
+export default[
   {
   "id": "recAGJfiU4CeaV0HL",
   "order": 3,

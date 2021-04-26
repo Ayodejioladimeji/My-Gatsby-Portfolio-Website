@@ -4,23 +4,30 @@ import Project from "../components/Project"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
+import data from '../constants/projects'
+import roll from '../assets/roll.gif'
 
-const url = "https://api.mocki.io/v1/e5dc5572"
+
 
 const ProjectsPage = () => {
-  const [projects, setProjects] = useState([]);
-
-
-  const fetchProject = async () => {
-    const response = await fetch(url)
-    const newJobs = await response.json()
-    setProjects(newJobs)
-  }
+  const [loading, setLoading] = useState(true)
+  const [projects, setProjects] = useState(data);
 
   useEffect(() => {
-    fetchProject()
+    setTimeout(() => {
+      setLoading(false)
+    }, 10000);
   }, [])
 
+
+  if (loading) {
+    return (
+      <section className="loading" data-aos="zoom-in">
+        <h1 data-aos="fade-down"> My Projects Loading</h1>
+        <img src={roll} alt="roller" data-aos="fade-right" />
+      </section>
+    )
+  }
 
 
   return (

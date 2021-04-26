@@ -1,4 +1,5 @@
-[
+
+export default[
   {
     "id": "recAGrffU4heaV0J",
     "order": 13,
@@ -7,7 +8,8 @@
     "description": "Mamazee is an ecommerce website where you can buy unisex clothing online. Mamazee provides Faster buying process store and product listing creation, cost reduction, Affordable advertising and marketing, Flexibility for customers, No reach limitations, Product and price comparison, Faster response to buyer/market demands.",
     "github": "https://github.com/Ayodejioladimeji",
     "url": "https://mamazee.herokuapp.com",
-    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948495/portfolio/admn_ubw1pr.png"
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948495/portfolio/admn_ubw1pr.png",
+    "featured":true
   },
   {
     "id": "recAGrfiU4heAV0J",
@@ -17,7 +19,8 @@
     "description": "Daily scheduler is a web applications that allows you to keep your daily tasks intact, properly and orderly.",
     "github": "https://github.com/Ayodejioladimeji",
     "url": "http://todo-tasks.000webhostapp.com/",
-    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948384/portfolio/todo_c8rn7a.png"
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948384/portfolio/todo_c8rn7a.png",
+    "featured":true
   },
   {
     "id": "recAGrfiU4heDV0J",
@@ -47,7 +50,8 @@
     "description": "Buy.com is an online portals that facilitate online transactions of goods and services through means of the transfer of information and funds over the Internet. You can purchase any series of mobile devices of your choice irrespective of the brands and manufacturers",
     "github": "https://github.com/Ayodejioladimeji/buy.com",
     "url": "https://buydotcom.netlify.app",
-    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948375/portfolio/buy_gewjkt.png"
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948375/portfolio/buy_gewjkt.png",
+    "featured":true
   },
   {
     "id": "recAGJfiU4CeaV0H",
@@ -87,7 +91,8 @@
     "description": "Free videos mobile App gives access to unlimited video streaming, --Free videos is a youtube clone that gives free access to videos online, With free videos web app you can watch unlimited videos online including movies and latest sport..Providing your audience with a variety of ways to consume information – including text, video illustrations and audio cues – will increase the overall engagement your videos receive, as you are catering to different learning styles.",
     "github": "https://github.com/Ayodejioladimeji/ReactNative-FreeVideos-Mobile-App",
     "url": "https://github.com/Ayodejioladimeji/ReactNative-FreeVideos-Mobile-App",
-    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948382/portfolio/native_ea4lcx.png"
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948382/portfolio/native_ea4lcx.png",
+    "featured":true
   },
   {
     "id": "recAGJfiU4eaV0HL",

@@ -1,4 +1,4 @@
-[
+export default[
   {
     "id": "1",
     "url": "https://blog.devcareer.io/step-by-step-react-counter-tutorial-for-absolute-beginners-ckfpj8n5u00nh5ts144s01oj1",

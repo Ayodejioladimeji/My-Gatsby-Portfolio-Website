@@ -9,7 +9,7 @@ const Blog = ({ title, image, slug, desc, url }) => {
         <h4>{title}</h4>
         <p>{desc}</p>
         <div className="blog-footer">
-          <a href={url} target="_blank">
+          <a href={url} target="_blank" rel="noreferrer">
             <p>{slug}</p>
           </a>
         </div>
@@ -20,3 +20,4 @@ const Blog = ({ title, image, slug, desc, url }) => {
 
 
 export default Blog
+

@@ -162,6 +162,28 @@ THE SECTION OF THE GLOBAL CLASSES
 }
 
 
+/* The section of the loading set time out */
+main{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+
+main img{
+  width:150px;
+  height:150px;
+  object-fit: cover;
+  border-radius:150px;
+  /* border:1px solid #00ff00; */
+}
+
+main p{
+  color:#00ff00;
+  font-family:monospace;
+}
+
 
 /* 
 ==============================
@@ -490,9 +512,14 @@ THE SECTION OF THE HERO COMPONENTS
   display: none;
 }
 
+.hero-info h1{
+  font-size:45px!important;
+}
+
 .hero-info h4 {
   color: var(--clr-primary-10);
   font-family:cursive;
+  font-size:19px!important;
 }
 
 .hero-icons {
@@ -501,6 +528,7 @@ THE SECTION OF THE HERO COMPONENTS
 
 .hero .btn {
   margin-top: 1.25rem;
+  font-size:10px;
 }
 
 @media screen and (min-width: 992px) {
@@ -864,6 +892,16 @@ THE SECTION OF THE PROJECTS
   word-spacing: 15px;
   color: violet;
 }
+.project-desc button{
+  background:transparent;
+  color:violet;
+  border:none;
+  outline:none;
+  margin-left:10px;
+  cursor:pointer;
+  text-decoration:underline
+}
+
 .project-stack {
   margin-bottom: 1rem;
 }
@@ -1099,7 +1137,7 @@ THE SECTION OF THE NAVIGATION PAGES
 .error-page {
   display: grid;
   place-items: center;
-  background: white;
+  /* background: white; */
   text-align: center;
 }
 .error-page h1 {

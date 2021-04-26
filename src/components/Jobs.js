@@ -3,33 +3,25 @@ import Title from "./Title"
 import { FaAngleDoubleRight } from "react-icons/fa"
 import Particles from 'react-particles-js'
 import gear from '../assets/gear.gif'
+import data from '../constants/jobs'
 
-
-const url = 'https://api.mocki.io/v1/ef42c429'
 
 const Jobas = () => {
   const [loading, setLoading] = useState(true)
   const [value, setValue] = useState(0);
-  const [jobs, setJobs] = useState([]);
+  const [jobs, setJobs] = useState(data);
   const [seeMore, setSeeMore] = useState('See More');
 
-  const fetchJobs = async ()=>{
-    const response = await fetch(url)
-    const newJobs = await response.json()
+  useEffect(() => {
     setTimeout(()=>{
-      setJobs(newJobs)
       setLoading(false)
     },15000);
-  }
-
-  useEffect(() => {
-    fetchJobs()
   }, [])
 
   if(loading){
     return(
       <section className="loading" data-aos="fade-out">
-        <h1 data-aos="fade-down">Work Experience Loading...</h1>
+        <h1 data-aos="fade-down">Work Experience Loading</h1>
         <img src={gear} alt="gear"/>
       </section>
     )
@@ -47,7 +39,7 @@ const Jobas = () => {
           params={{ 
             particles: { 
               number: { 
-                value: 200, 
+                value: 500, 
                 density: { 
                   enable: true, 
                   value_area: 731
