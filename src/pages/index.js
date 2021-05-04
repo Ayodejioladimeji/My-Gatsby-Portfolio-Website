@@ -14,14 +14,16 @@ export default () => {
   useEffect(()=> {
     setTimeout(() => {
       setLoading(false)
-    }, 10000);
+    }, 5000);
   },[])
 
   if(loading){
     return(
       <main>
+        
         <img src={load} alt={load} />
-        <p>Please check your internet connection</p>
+        <p>Thank you for contacting Layobright</p>
+        <small style={{color:"#fff",letterSpacing:'5px'}}>site loading...</small>
       </main>
     )
   }
