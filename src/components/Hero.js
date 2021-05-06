@@ -6,6 +6,7 @@ import SocialLinks from "../constants/socialLinks"
 
 import Aos from 'aos';
 import "aos/dist/aos.css";
+import Typewriter from 'typewriter-effect'
 
 import Particles from './Particles'
 
@@ -41,7 +42,31 @@ const Hero = () => {
             <div className="underline"></div>
             <h1 data-aos="zoom-in">I'm LayoBright</h1>
             <h4 data-aos="fade-right">Web Developer, Designer & Programmer</h4>
+            <div className="type">
+              <Typewriter
+                // onInit={(typewriter) => {
+                //   typewriter.typeString('I Design...')
+                //     .pauseFor(2500)
+                //     .deleteAll()
+                //     .typeString('I Create...')
+                //     .pauseFor(2500)
+                //     .deleteAll()
+                //     .typeString('I Transform...')
+                //     .pauseFor(2500)
+                //     .deleteAll()
+                //     .typeString('Ideas into Reality...')
+                //     .pauseFor(2500)
+                //     .deleteAll()
+                //     .start();
+                // }}
 
+                options={{
+                  strings: ['I Design...', 'I Create...', 'I transform ideas into Reality...'],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </div>
             <Link to="/contact" className="btn" data-aos="fade-down">
               Get In Touch
             </Link>

@@ -16,7 +16,7 @@ export const Blogs = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 3500);
+    }, 5000);
   }, [])
 
 
@@ -33,7 +33,7 @@ export const Blogs = () => {
 
   return (
     <section className="section blog-section">
-      <Title data-aos="fade-down" title="My Blogs" />
+      <Title data-aos="fade-down" title="My Articles" />
       <div className="section-center blogs-center">
         {blogs.map((blog, index) => {
           return <Blog key={index} {...blog} />

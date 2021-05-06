@@ -5,7 +5,6 @@ import Particles from 'react-particles-js'
 import gear from '../assets/gear.gif'
 import data from '../constants/jobs'
 
-
 const Jobas = () => {
   const [loading, setLoading] = useState(true)
   const [value, setValue] = useState(0);
@@ -15,7 +14,7 @@ const Jobas = () => {
   useEffect(() => {
     setTimeout(()=>{
       setLoading(false)
-    },15000);
+    },20000);
   }, [])
 
   if(loading){
@@ -28,7 +27,7 @@ const Jobas = () => {
   }
 
   const clickHandler = ()=>{
-    setSeeMore("Loading...")
+    setSeeMore("Loading")
   }
 
     const {company, dates, duties, title } = jobs[value]

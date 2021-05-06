@@ -17,7 +17,7 @@ const Projects = ({ title }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 5000);
+    }, 20000);
   }, [])
 
 
@@ -33,6 +33,7 @@ const Projects = ({ title }) => {
 
   return (
     <section className="section projects">
+      <div style={{marginBottom:'70px'}}></div>
       <Title title={title} />
       <div className="section-center projects-center">
         {featuredProjects.map((project, index) => {
@@ -41,7 +42,7 @@ const Projects = ({ title }) => {
       </div>
 
       <Link to="/projects" className="btn center-btn" data-aos="fade-up">
-        projects
+        All projects
       </Link>
     </section>
   )
