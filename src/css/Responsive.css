@@ -95,12 +95,12 @@
     /* ================================ */
 
     .hero h1{
-        font-size:35px;
+        font-size:35px!important;
         color: var(--clr-primary-5);
     }
 
     .section-title h2{
-        font-size:25px;
+        font-size:15px;
     }
 
     .section {
@@ -152,7 +152,7 @@
     .jobs{
     position:relative;
     margin-top:50px;
-    padding-bottom:0px;
+    padding-bottom:10rem;
     }
     
     .jobs-center {
@@ -271,11 +271,46 @@
     width:90px;
     height:90px;
     }
+
+
+/* 
+===================================================
+  The section of the create
+===================================================
+*/
+.box{
+    height:70vh;
+    background-size:contain;
+  }
+  
+  .box::after{
+    height:70vh;
+  }
+  
+  .box-center{
+    width:95%;
+    padding:20px;
+  }  
+
+
+/* 
+=========================================
+  The section of the counter
+=========================================
+*/
+  .boxs::after{
+    height:152%;
+  }
+
       
-    /* ============================= */
+/*
+ =============================
+ The projects section
+ ==============================
+ */
 
     .projects {
-    margin-top:200px;
+    margin-top:0px;
     }
 
     .project-img {
@@ -365,7 +400,6 @@
     
     
     .blog-section{
-    background:yellow;
     margin-top:70px;
     }
     
@@ -393,7 +427,7 @@
     }
     
     .blog-card h4 {
-    color: var(--clr-grey-8);
+    color: var(--clr-primary-5);
     }
     
     .blog-card p {
@@ -704,7 +738,7 @@
     }
 
     .section-title h2{
-        font-size:25px;
+        font-size:20px;
     }
 
     .section {
@@ -732,6 +766,7 @@
     text-align: center;
     -webkit-transition: var(--transition);
     transition: var(--transition);
+    margin-top:10px;
     }
     
     .service-icon {
@@ -879,11 +914,43 @@
     width:90px;
     height:90px;
     }
+
+
+/* 
+===================================================
+  The section of the create
+===================================================
+*/
+.box{
+    height:70vh;
+    background-size:contain;
+  }
+  
+  .box::after{
+    height:70vh;
+  }
+  
+  .box-center{
+    width:95%;
+    padding:20px;
+  }  
+
+
+/* 
+=========================================
+  The section of the counter
+=========================================
+*/
+  .boxs::after{
+    height:135%;
+  }
+
+
       
-    /* ============================= */
+/* ============================= */
 
     .projects {
-    margin-top:0px;
+    margin-top:-25px;
     }
 
     .project-img {
@@ -1000,7 +1067,7 @@
     }
     
     .blog-card h4 {
-    color: var(--clr-grey-8);
+        color: var(--clr-primary-5);
     }
     
     .blog-card p {
@@ -1479,11 +1546,43 @@
     width:90px;
     height:90px;
     }
+
+
+    /* 
+===================================================
+  The section of the create
+===================================================
+*/
+.box{
+    height:70vh;
+    background-size:contain;
+  }
+  
+  .box::after{
+    height:70vh;
+  }
+  
+  .box-center{
+    width:95%;
+    padding:20px;
+  }  
+
+
+/* 
+=========================================
+  The section of the counter
+=========================================
+*/
+  .boxs::after{
+    height:120%;
+  }
+
+
       
     /* ============================= */
 
     .projects {
-    margin-top:200px;
+    margin-top:-25px;
     }
 
     .project-img {
@@ -1601,7 +1700,7 @@
     }
     
     .blog-card h4 {
-    color: var(--clr-grey-8);
+    color: var(--clr-primary-5);
     }
     
     .blog-card p {

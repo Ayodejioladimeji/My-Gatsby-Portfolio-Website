@@ -6,15 +6,18 @@ import Jobas from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
 import SEO from "../components/SEO"
+import Typewriter from 'typewriter-effect'
 
 import load from '../assets/dancing.gif'
+import Counter from "../components/Counter"
+import Create from "../components/Create"
 
 export default () => {
   const [loading, setLoading] = useState(true)
   useEffect(()=> {
     setTimeout(() => {
       setLoading(false)
-    }, 5000);
+    }, 5600);
   },[])
 
   if(loading){
@@ -22,8 +25,16 @@ export default () => {
       <main>
         
         <img src={load} alt={load} />
-        <p>Thank you for contacting Layobright</p>
-        <small style={{color:"#fff",letterSpacing:'5px'}}>site loading...</small>
+        <p>
+          <Typewriter
+            options={{
+              strings: ['Thank you for contacting Layobright'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </p>
+        <small>site loading</small>
       </main>
     )
   }
@@ -32,7 +43,9 @@ export default () => {
         <SEO title="Home" />
         <Hero/>
         <Services/>
+        <Counter/>
         <Jobas/>
+        <Create/>
         <Projects />
         <Blogs/>
     </Layout>

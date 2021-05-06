@@ -117,23 +117,23 @@ THE SECTION OF THE GLOBAL CLASSES
 
 .btn {
   text-transform: uppercase;
-  background:violet;
+  background:transparent;
   color:white;
-  padding: 0.585rem 0.75rem;
+  padding: 1rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
   font-weight: 700;
-  -webkit-transition: var(--transition);
+  /* -webkit-transition: var(--transition); */
   transition: var(--transition);
   font-size: 0.675rem;
-  border: 2px solid transparent;
+  border: 1px solid violet;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-  border-radius: var(--radius);
 }
 .btn:hover {
   color: #00ff00;
   background: var(--clr-primary-5);
+  transition: var(--transition);
 }
 .center-btn {
   display: block;
@@ -141,6 +141,7 @@ THE SECTION OF THE GLOBAL CLASSES
   text-align: center;
   margin: 0 auto;
   margin-top: 3rem;
+  transition: var(--transition);
 }
 /* section */
 .section {
@@ -172,8 +173,8 @@ main{
 }
 
 main img{
-  width:150px;
-  height:150px;
+  width:100px;
+  height:100px;
   object-fit: cover;
   border-radius:150px;
   /* border:1px solid #00ff00; */
@@ -184,13 +185,16 @@ main p{
   font-family:monospace;
 }
 
-
+main small{
+  color:rgba(255, 255, 255, 0.459);
+  letter-spacing: 5px;
+}
 /* 
 ==============================
 THE SECTION OF THE UNDERLINE
 ==============================
  */
-/* added during recording */
+
 .underline {
   width: 5rem;
   height: 0.25rem;
@@ -206,7 +210,8 @@ THE SECTION OF THE UNDERLINE
 }
 
 .section-title h2{
-  font-size:35px;
+  font-size:30px;
+  text-transform:uppercase;
 }
 
 /* page links */
@@ -290,7 +295,7 @@ THE SECTION OF THE NAVIGATIONAL BAR
   outline:none;
 }
 .logo-btn:hover {
-  color:violet;
+  color:rgba(238, 130, 238, 0.226);
 }
 
 .nav-links {
@@ -356,7 +361,8 @@ THE SECTION OF THE SIDE BAR
   place-items: center;
   opacity: 0;
   transition: var(--transition);
-  transform: translateX(-100%);
+  transform: translateY(100%);
+
 }
 
 .show-sidebar {
@@ -493,6 +499,13 @@ THE SECTION OF THE HERO COMPONENTS
   right:0;
 }
 
+.type{
+  color:#00ff00;
+  font-family:cursive;
+  font-size:20px;
+  margin-left:5px;
+}
+
 #particles-js{
   height:100vh;
   width:100%;
@@ -514,6 +527,7 @@ THE SECTION OF THE HERO COMPONENTS
 
 .hero-info h1{
   font-size:45px!important;
+  color:var(--clr-primary-5);
 }
 
 .hero-info h4 {
@@ -598,11 +612,12 @@ THE SECTION OF THE SERVICES
 .service {
   padding: 3rem 1.5rem;
   margin-bottom: 2rem;
-  border-radius: 150px;
-  border:1px solid violet;
+  border:1px solid rgba(238, 130, 238, 0.295);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  cursor:pointer;
+  border-radius:150px;
 }
 
 .service-icon {
@@ -610,6 +625,34 @@ THE SECTION OF THE SERVICES
   margin-bottom: 1.5rem;
   color:violet;
 }
+
+.service-icon{
+  animation:scrollTop 0.5s alternate ease infinite;
+}
+
+@keyframes scrollTop{
+  from{
+    transform:translateY(2px);
+  }
+  to{
+    transform:translateY(-1px)
+  }
+}
+
+
+.services-icon{
+  animation:scrollTops 0.5s alternate ease infinite;
+}
+
+@keyframes scrollTops{
+  from{
+    transform:translateY(5px);
+  }
+  to{
+    transform:translateY(-1px)
+  }
+}
+
 
 .service h4{
   color:violet;
@@ -640,14 +683,14 @@ THE SECTION OF THE SERVICES
   .services-center {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    -webkit-column-gap: 2rem;
+    -webkit-column-gap: 24em;
     -moz-column-gap: 2rem;
     column-gap: 2rem;
   }
 }
 @media screen and (min-width: 992px) {
   .services-center {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -726,12 +769,20 @@ Jobs
 
 .job-info h4 {
   text-transform: uppercase;
-  color: #151c58;
-  background:violet;
+  color: #00ff00;
+  background:transparent;
   display: inline-block;
-  padding: 0.575rem 0.75rem;
+  padding: 1rem 0.75rem;
   border-radius: var(--radius);
   transition: var(--transition);
+  border:1px solid violet;
+  cursor: pointer;
+}
+
+.job-info h4:hover{
+  background:violet;
+  color:var(--clr-white);
+  transition:var(--transition);
 }
 
 .job-date {
@@ -787,6 +838,10 @@ Jobs
   height:100px;
 }
 
+.btn-info img{
+  width:40px;
+  height:40px;
+}
 
 /* THE SECTION OF THE MEDIA QUERY */
 @media screen and (min-width: 992px) {
@@ -825,12 +880,157 @@ Jobs
 
 
 
+/* 
+===================================================
+  The section of the create
+===================================================
+*/
+.box{
+  height:70vh;
+  background-image:url('../assets/one.jpeg');
+  background-attachment: fixed;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.box::after{
+  content:"";
+  background:rgba(3, 1, 10, 0.767);
+  height:70vh;
+  width:100%;
+  position:absolute;
+}
+
+.box-center{
+  background:rgba(3, 1, 10, 0.685);
+  width:90%;
+  padding:60px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  align-items: center;
+  z-index:999;
+  color:#f3f3f385;
+  border:1px solid rgba(238, 130, 238, 0.295);
+}
+
+.box-center h3{
+  color:var(--clr-primary-5);
+}
+
+.box-center p{
+  margin-top:5px;
+}
+
+
+
+/* 
+=========================================
+  The section of the counter
+=========================================
+*/
+.boxs{
+  /* height:70vh; */
+  background-image:url('../assets/three.jpeg');
+  background-attachment: fixed;
+  background-size:cover;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+.boxs::after{
+  content:"";
+  background:rgba(3, 1, 10, 0.863);
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+.boxs-center{
+  background:transparent;
+  width:90%;
+  padding:60px;
+  display: grid;
+  /* grid-template-columns: repeat(4, 1fr); */
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  z-index:999;
+}
+
+.counters{
+    /* background:red; */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    line-height:1.5rem;
+    color:var(--clr-white);
+}
+
+.count-images{
+  width:50px!important;
+  height:50px!important;
+}
+
+.counters h2{
+  font-weight:bold;
+  font-size:30px;
+  margin-top:20px;
+  font-family:arial;
+  font-weight:500;
+}
+
+.counters p{
+  font-family:monospace;
+  font-weight:500;
+}
+
+
+@media screen and (min-width:676px){
+  .boxs-center{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .boxs::after{
+    height:50vh;
+  }
+}
+
+
+@media screen and (min-width:992px){
+  .boxs-center{
+    grid-template-columns:repeat(4, 1fr);
+  }
+  .boxs::after{
+    height:100vh;
+  }
+}
+
+
+@media screen and (max-width:675px){
+  .boxs-center{
+    grid-template-columns:1fr;
+  }
+}
+
+
+@media screen and (min-width:530px){
+  .boxs{
+    height:100vh!important;
+  }
+}
+
 
 
 /*
-=============== 
+============================ 
 THE SECTION OF THE PROJECTS
-===============
+============================
 */
 .projects {
   /* background: var(--clr-grey-10); */
@@ -1039,8 +1239,15 @@ THE SECTION OF THE BLOGS
 
 .blog-footer p {
   margin-bottom: 0;
-  font-weight: bold;
   color: violet;
+  background:transparent!important;
+  border:1px solid #f3f3f342;
+  padding:10px 20px!important;
+  transition:var(--transition);
+}
+
+.blog-footer p:hover{
+  background:var(--clr-primary-5)!important;
 }
 
 .blog-footer p:first-of-type {
@@ -1088,6 +1295,7 @@ THE SECTION OF THE FOOTER
   display: grid;
   place-items: center;
   margin-top:20px;
+  position:relative;
 }
 .footer h4 {
   margin-top: 0.5rem;
@@ -1113,6 +1321,35 @@ THE SECTION OF THE FOOTER
   color:#00ff00;
 }
 
+
+
+/* 
+===================================
+The section of the scroll to top
+======================================
+*/
+.scroll{
+  color:#fff;
+  position:fixed;
+  right:30px;
+  bottom:40px;
+  padding:10px;
+  background:violet;
+  height:40px;
+  width:40px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  border-radius:150px;
+  transition:0.5s ease-in-out;
+  cursor:pointer;
+  border:none;
+  z-index:999999;
+}
+
+.scroll:hover{
+  background:#00ff00;
+}
 
 
 
