@@ -888,9 +888,9 @@ Jobs
 .box{
   height:70vh;
   background-image:url('../assets/one.jpeg');
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size:cover;
-  background-repeat:no-repeat;
+  /* background-repeat:no-repeat; */
   display:flex;
   align-items:center;
   justify-content: center;
