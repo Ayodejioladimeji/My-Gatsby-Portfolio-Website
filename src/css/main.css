@@ -890,6 +890,7 @@ Jobs
   background-image:url('../assets/one.jpeg');
   background-attachment: fixed;
   background-size:cover;
+  background-repeat:no-repeat;
   display:flex;
   align-items:center;
   justify-content: center;
@@ -935,6 +936,7 @@ Jobs
   /* height:70vh; */
   background-image:url('../assets/three.jpeg');
   background-attachment: fixed;
+  background-repeat: no-repeat;
   background-size:cover;
   display:flex;
   align-items:center;

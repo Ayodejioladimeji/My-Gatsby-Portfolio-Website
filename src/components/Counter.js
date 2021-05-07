@@ -8,7 +8,7 @@ const Counter = () => {
            {counter.map(item=>{
                const {id, icon, title, text} = item;
                return(
-                <article className="counters"> 
+                <article key={id} className="counters"> 
                     {icon}
                     <h2>{title}</h2>
                     <p>{text}</p>
