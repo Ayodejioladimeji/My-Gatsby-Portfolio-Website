@@ -4,7 +4,7 @@ import counter from '../constants/counter'
 const Counter = () => {
     return (
         <div className="boxs">
-        <div className="boxs-center">
+        <div className="boxs-center"> 
            {counter.map(item=>{
                const {id, icon, title, text} = item;
                return(

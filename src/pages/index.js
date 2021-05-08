@@ -5,12 +5,14 @@ import Services from "../components/Services"
 import Jobas from "../components/Jobs"
 import Projects from "../components/Projects"
 import Blogs from "../components/Blogs"
+import Counter from "../components/Counter"
+import Create from "../components/Create"
+import Colors from "../components/Colors"
 import SEO from "../components/SEO"
 import Typewriter from 'typewriter-effect'
 
 import load from '../assets/dancing.gif'
-import Counter from "../components/Counter"
-import Create from "../components/Create"
+
 
 export default () => {
   const [loading, setLoading] = useState(true)
@@ -44,6 +46,7 @@ export default () => {
         <Hero/>
         <Services/>
         <Counter/>
+        <Colors/>
         <Jobas/>
         <Create/>
         <Projects />

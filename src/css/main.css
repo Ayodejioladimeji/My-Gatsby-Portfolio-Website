@@ -124,12 +124,19 @@ THE SECTION OF THE GLOBAL CLASSES
   display: inline-block;
   font-weight: 700;
   /* -webkit-transition: var(--transition); */
-  transition: var(--transition);
+  /* transition: var(--transition); */
   font-size: 0.675rem;
   border: 1px solid violet;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+.hero-info button{
+  background:transparent;
+  border:none;
+  outline:none;
+}
+
 .btn:hover {
   color: #00ff00;
   background: var(--clr-primary-5);
@@ -521,9 +528,71 @@ THE SECTION OF THE HERO COMPONENTS
   background:rgb(10 3 34 / 52%);
 }
 
-.hero-img {
+/* .hero-img {
   display: none;
+} */
+
+
+/*
+=========================================
+ The section of the image 
+========================================
+ */
+.gallery-container {
+  width: 100%;
+  margin: 2rem auto;
+  grid-row: 1/1;
+  grid-column: 7/-1;
+  display:block;
+  padding:50px 10px;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(9, 3vw);
+  grid-gap: 1rem; 
+  padding-top:30px;
+  padding-left:70px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border:4px solid violet;
+  cursor:pointer;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.gallery__item--3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.gallery__item--4 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 7;
+
+}
+
 
 .hero-info h1{
   font-size:45px!important;
@@ -568,15 +637,6 @@ THE SECTION OF THE HERO COMPONENTS
   .hero-info {
     grid-row: 1/1;
     grid-column: 1 / span 8;
-  }
-
-  .hero-img {
-    display: block;
-    grid-row: 1/1;
-    grid-column: 7/-1;
-    border-right:10px solid violet;
-    border-bottom:10px solid violet;
-    object-fit: contain;
   }
 }
 
@@ -1006,10 +1066,11 @@ Jobs
 
 @media screen and (min-width:992px){
   .boxs-center{
+    height:50vh;
     grid-template-columns:repeat(4, 1fr);
   }
   .boxs::after{
-    height:100vh;
+    height:100%;
   }
 }
 
@@ -1594,4 +1655,43 @@ Blog Template
   width: 15rem;
   height: 15rem;
   margin: 3rem 0;
+}
+
+
+/* 
+=====================================
+The section of the colors of the page
+=====================================
+*/
+
+
+.colors{
+  list-style:none;
+  margin:0;
+  padding:3rem;
+  display:flex;
+  flex-wrap:wrap;
+  width:100%;
+  justify-content: center;
+}
+
+.colo{
+  display:block;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  margin:20px;
+  position:relative;
+  cursor:pointer;
+  flex-shrink: 0;
+}
+
+.outline{
+  position:absolute;
+  top:-20px;
+  left:-20px;
+  right:-20px;
+  bottom:-20px;
+  border:10px solid white;
+  border-radius:50%;
 }
