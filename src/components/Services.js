@@ -1,6 +1,7 @@
 import React from "react"
 import Title from "./Title"
 import services from "../constants/services"
+import { motion } from "framer-motion"
 
 
 const Services = () => {
