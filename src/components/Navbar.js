@@ -6,7 +6,7 @@ import {Link} from 'gatsby'
 
 const Navbar = ({toggleSidebar}) => {
   return (
-    <nav className="navbar" style={{backgroundColor:'black'}}>
+    <nav className="navbar">
       <div className="nav-center">
 
         {/* THE SECTION OF THE NAV HEADER LOGO */}

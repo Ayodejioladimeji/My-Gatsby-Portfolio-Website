@@ -18,6 +18,32 @@
   --fixed-width: 700px;
 }
 
+.dark-theme {
+  --clr-bcg: rgb(3, 1, 10);
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+  --clr-hero:rgb(10 3 34 / 52%);
+  --clr-hero-before:rgb(10 3 34 / 52%);
+  --clr-border:#00ff00;
+  --clr-counter:rgba(3, 1, 10, 0.863);
+  --clr-create:rgba(3, 1, 10, 0.767);
+  --clr-image-border:violet;
+  --clr-btn:#00ff00;
+  --clr-shadow:transparent;
+}
+.light-theme {
+  --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a3);
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-hero:transparent;
+  --clr-hero-before:transparent;
+  --clr-border:#fff;
+  --clr-counter:#d2366abb;
+  --clr-create:linear-gradient(250deg, #7c2ff7a8, #f207a49a);
+  --clr-image-border:#00ff00;
+  --clr-btn:#fff;
+  --clr-shadow:#fff;
+}
 
 
 /*
@@ -41,10 +67,11 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background:rgb(3, 1, 10);
   line-height: 1.5;
   font-size: 0.875rem;
   margin-top: 5rem;
+  background: var(--clr-bcg);
+  color: var(--clr-font);
 }
 
 ul {
@@ -117,12 +144,13 @@ THE SECTION OF THE GLOBAL CLASSES
 
   .btn{
     background:transparent;
-    border:1px solid violet;
+    border:1px solid var(--clr-btn);
     padding:10px 20px;
     color:var(--clr-primary-5);
     outline:none;
     cursor:pointer;
     transition:var(--transition);
+    font-weight:bold;
   }
 
   .btn:hover{
@@ -236,6 +264,13 @@ main{
   top:50%;
   transform:translate(-50%,-50%);
   text-align:center;
+  width:100%;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+  background:rgb(3, 1, 10)!important;
 }
 
 main img{
@@ -265,7 +300,7 @@ THE SECTION OF THE UNDERLINE
   width: 5rem;
   height: 0.25rem;
   margin-bottom: 1.25rem;
-  background:#00ff00;
+  background:var(--clr-border);
   margin-left: auto;
   margin-right: auto;
 }
@@ -291,7 +326,7 @@ THE SECTION OF THE UNDERLINE
 }
 .social-link {
   font-size: 1.5rem;
-  color: violet;
+  color: var(--clr-border);
   transition: var(--transition);
 }
 .social-link:hover {
@@ -315,7 +350,8 @@ THE SECTION OF THE NAVIGATIONAL BAR
   height: 5rem;
   display: flex;
   align-items: center;
-  z-index: 1000;
+  z-index: 999999999999999;
+  background: var(--clr-bcg);
 }
 .nav-center {
   width: 90vw;
@@ -336,7 +372,7 @@ THE SECTION OF THE NAVIGATIONAL BAR
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  /* color: #00ff00; */
+  color: #00ff00;
   cursor: pointer;
   transition: var(--transition);
   outline:none;
@@ -403,7 +439,7 @@ THE SECTION OF THE NAVIGATIONAL BAR
 
 @media screen and (min-width: 992px) {
   .navbar {
-    background: transparent;
+    background: var(--clr-bcg);
   }
 }
 
@@ -736,53 +772,6 @@ Jobs
   transition: var(--transition);
   /* background:blue; */
   }
-}
-
-
-
-/* 
-===================================================
-  The section of the create
-===================================================
-*/
-.box{
-  height:70vh;
-  background-image:url('../assets/one.jpeg');
-  /* background-attachment: fixed; */
-  background-size:cover;
-  /* background-repeat:no-repeat; */
-  display:flex;
-  align-items:center;
-  justify-content: center;
-}
-
-.box::after{
-  content:"";
-  background:rgba(3, 1, 10, 0.767);
-  height:70vh;
-  width:100%;
-  position:absolute;
-}
-
-.box-center{
-  background:rgba(3, 1, 10, 0.685);
-  width:90%;
-  padding:60px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content: space-around;
-  align-items: center;
-  z-index:999;
-  color:#f3f3f385;
-  border:1px solid rgba(238, 130, 238, 0.295);
-}
-
-.box-center h3{
-  color:var(--clr-primary-5);
-}
-
-.box-center p{
-  margin-top:5px;
 }
 
 

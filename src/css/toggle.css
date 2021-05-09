@@ -1,0 +1,106 @@
+/*
+=============== 
+Global Styles
+===============
+*/
+
+:root {
+    --clr-bcg: #fff;
+    --clr-font: #282c35;
+    --clr-primary: #d23669;
+  }
+
+  .dark-theme {
+    --clr-bcg: rgb(3, 1, 10);
+    --clr-font: #fff;
+    --clr-primary: #ffa7c4;
+    --clr-hero:rgb(10 3 34 / 52%);
+    --clr-hero-before:rgb(10 3 34 / 52%);
+    --clr-border:#00ff00;
+    --clr-counter:rgba(3, 1, 10, 0.863);
+    --clr-create:rgba(3, 1, 10, 0.767);
+    --clr-image-border:violet;
+    --clr-btn:#00ff00;
+    --clr-shadow:transparent;
+  }
+  .light-theme {
+    --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a3);
+    --clr-font: #282c35;
+    --clr-primary: #d23669;
+    --clr-hero:transparent;
+    --clr-hero-before:transparent;
+    --clr-border:#fff;
+    --clr-counter:#d2366abb;
+    --clr-create:linear-gradient(250deg, #7c2ff7a8, #f207a49a);
+    --clr-image-border:#00ff00;
+    --clr-btn:#fff;
+    --clr-shadow:#fff;
+  }
+  
+  .togg {
+    background: var(--clr-primary);
+    color: var(--clr-bcg);
+    padding: 0.25rem 0.5rem;
+    border-color: transparent;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position:fixed;
+    right:20px;
+    top:6rem;
+    z-index: 99999999;
+  }
+  
+
+  /* THE SECTION TOGGLE TWO */
+  .switch{
+    width:80px;
+    height:40px;
+    background:rgba(255,255,255,0.4);
+    display:flex;
+    justify-content: flex-start;
+    border-radius:50px;
+    padding:10px;
+    cursor:pointer;
+  }
+
+  .switch[data-isOn="true"]{
+    justify-content: flex-end;
+  }
+
+  .handle{
+    width:20px;
+    height:20px;
+    background:white;
+    border-radius:40px;
+  }
+
+
+  @media screen and (max-width:425px){
+    .togg {
+      left:20px;
+      bottom:12rem;
+      z-index: 99999999;
+    }
+
+    
+  /* THE SECTION TOGGLE TWO */
+  .switch{
+    width:60px;
+    height:35px;
+    background:rgba(255,255,255,0.4);
+    display:flex;
+    justify-content: flex-start;
+    border-radius:50px;
+    padding:10px;
+    cursor:pointer;
+  }
+
+  .handle{
+    width:15px;
+    height:15px;
+  }
+
+  }

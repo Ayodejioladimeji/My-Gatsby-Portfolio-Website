@@ -8,6 +8,7 @@ import SocialLinks from "../constants/socialLinks"
 import Aos from 'aos';
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect'
+import Toggle from './Toggle'
 
 import Particles from './Particles'
 import { motion } from "framer-motion"
@@ -69,6 +70,7 @@ const Hero = () => {
           
           <Gallery/>
         {/* <Image fluid={fluid} className="hero-img"/> */}
+        <Toggle/>
       </div>
     </header>
   )

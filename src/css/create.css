@@ -1,0 +1,46 @@
+/* 
+===================================================
+  The section of the create
+===================================================
+*/
+.box{
+    height:70vh;
+    background-image:url('../assets/one.jpeg');
+    /* background-attachment: fixed; */
+    background-size:cover;
+    /* background-repeat:no-repeat; */
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .box::after{
+    content:"";
+    background:var(--clr-counter);
+    height:70vh;
+    width:100%;
+    position:absolute;
+  }
+  
+  .box-center{
+    background:var(--clr-create);
+    width:90%;
+    padding:60px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    align-items: center;
+    z-index:999;
+    color:#f3f3f385;
+    border:1px solid rgba(238, 130, 238, 0.295);
+    text-shadow:1px 1px var(--clr-shadow)
+  }
+  
+  .box-center h3{
+    color:var(--clr-primary-5);
+  }
+  
+  .box-center p{
+    margin-top:5px;
+  }
+  
