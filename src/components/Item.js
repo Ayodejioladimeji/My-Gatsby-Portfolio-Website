@@ -9,7 +9,7 @@ const spring = {
 
 const Item = ({color, isSelected, onClick}) => {
     return (
-        <li className="colo services-icon" onClick={onClick} style={{backgroundColor:color}}>
+        <li className="colo" onClick={onClick} style={{backgroundColor:color}}>
             {isSelected && (
                 <motion.div layoutId="outline" className="outline" initial={false} animate={{borderColor:color}} transition={spring}/>
             )}

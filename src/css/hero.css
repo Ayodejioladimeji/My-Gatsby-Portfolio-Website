@@ -59,6 +59,12 @@ THE SECTION OF THE HERO COMPONENTS
     margin: 2rem auto;
     display:block;
     padding:50px 10px;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  }
+
+  .gallery-container{
+    display:none;
   }
   
   .gallery {
@@ -135,6 +141,12 @@ THE SECTION OF THE HERO COMPONENTS
   
   
   @media screen and (min-width: 992px) {
+    .gallery-container{
+      grid-row: 1/1;
+      grid-column: 7/-1;
+      display:grid;
+  }
+
     .hero::before {
       content: "";
       position: absolute;
@@ -165,6 +177,7 @@ THE SECTION OF THE HERO COMPONENTS
     .gallery-container{
         grid-row: 1/1;
         grid-column: 7/-1;
+        display:grid;
     }
 
     .hero h4 {

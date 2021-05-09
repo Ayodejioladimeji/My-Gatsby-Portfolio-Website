@@ -54,7 +54,7 @@ const Hero = () => {
               />
             </div>
 
-            <motion.button whileHover="">
+            <motion.button>
               <Link to="/contact" className="btns effect04" data-aos="fade-down" data-sm-link-text="CLICK" target="_blank">
                 <span>Get In Touch</span>
               </Link>

@@ -2,6 +2,17 @@
 export default[
   {
     "id": "recAGrffU4heaV0J",
+    "order": 14,
+    "title": "Zuri Chat",
+    "stack": "REACT, CSS, FRAMER-MOTION, CHAT-ENGINE, STYLED-COMPONENT, NETLIFY",
+    "description": "Zuri chat is a multiple chat platform for group conversation and private chats, Zuri chat provides enough privacy for you and your team to collaborate together and discuss solutions. With Zuri chat you can send live messages and receive text asynchronously...",
+    "github": "https://github.com/Ayodejioladimeji/chat-app",
+    "url": "https://zurichat.netlify.app",
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1620538067/Screenshot_2021-05-09_at_6.25.39_AM_txpfzy.png",
+    "featured":true
+  },
+  {
+    "id": "recAGrffU4heaV0J",
     "order": 13,
     "title": "MAMAZEE CLOTHING",
     "stack": "REACT, CSS, NODE-JS, BOOTSTRAP, HEROKU-APP",
@@ -20,7 +31,6 @@ export default[
     "github": "https://github.com/Ayodejioladimeji",
     "url": "http://todo-tasks.000webhostapp.com/",
     "image": "https://res.cloudinary.com/devsource/image/upload/v1614948384/portfolio/todo_c8rn7a.png",
-    "featured":true
   },
   {
     "id": "recAGrfiU4heDV0J",
@@ -40,7 +50,8 @@ export default[
     "description": "Home and Away is a relaxation place, where you can enjoy your holiday with friends and families, Home and Away has beautiful and condusive facilities that will make you comfortable throughout your stay ",
     "github": "https://github.com/Ayodejioladimeji/Home-and-Away",
     "url": "https://homeandaway.netlify.app",
-    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/away_fqubqi.png"
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/away_fqubqi.png",
+    'featured': true,
   },
   {
     "id": "recAGJfiU4heaV0H",
