@@ -30,7 +30,9 @@ Global Styles
     --clr-hero:transparent;
     --clr-hero-before:transparent;
     --clr-border:#fff;
-    --clr-counter:#d2366abb;
+    /* --clr-counter:transparent; */
+    --clr-counter:#d2366a33;
+    --clr-create:transparent;
     --clr-create:linear-gradient(250deg, #7c2ff7a8, #f207a49a);
     --clr-image-border:#00ff00;
     --clr-btn:#fff;
