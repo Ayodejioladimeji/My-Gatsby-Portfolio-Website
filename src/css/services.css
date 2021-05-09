@@ -1,0 +1,88 @@
+.service {
+    padding: 3rem 1.5rem;
+    margin-bottom: 2rem;
+    border:1px solid rgba(238, 130, 238, 0.295);
+    text-align: center;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    cursor:pointer;
+    border-radius:150px;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color:violet;
+  }
+  
+  .service-icon{
+    animation:scrollTop 0.5s alternate ease infinite;
+  }
+  
+  @keyframes scrollTop{
+    from{
+      transform:translateY(2px);
+    }
+    to{
+      transform:translateY(-1px)
+    }
+  }
+  
+  
+  .services-icon{
+    animation:scrollTops 0.5s alternate ease infinite;
+  }
+  
+  @keyframes scrollTops{
+    from{
+      transform:translateY(5px);
+    }
+    to{
+      transform:translateY(-1px)
+    }
+  }
+  
+  
+  .service h4{
+    color:violet;
+  }
+  
+  .service .underline {
+    width: 3rem;
+    height: 0.12rem;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+  }
+  .service p {
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    color: var(--clr-primary-5);
+  }
+  .service:hover {
+    border-color: #00ff00;
+    color: var(--clr-primary-10);
+  }
+  .service:hover p {
+    color: var(--clr-primary-10);
+  }
+  .service:hover .underline {
+    background: var(--clr-primary-5);
+  }
+  @media screen and (min-width: 676px) {
+    .services-center {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      -webkit-column-gap: 24em;
+      -moz-column-gap: 2rem;
+      column-gap: 2rem;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .services-center {
+      grid-template-columns: repeat(3, 1fr);
+
+    }
+
+
+  }
+  

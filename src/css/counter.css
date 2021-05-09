@@ -1,0 +1,105 @@
+/* 
+=========================================
+  The section of the counter
+=========================================
+*/
+.boxs{
+    /* height:70vh; */
+    background-image:url('../assets/three.jpeg');
+    /* background-attachment: fixed; */
+    /* background-repeat: no-repeat; */
+    background-size:cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+  }
+  
+  .boxs::after{
+    content:"";
+    background:rgba(3, 1, 10, 0.863);
+    height:100%;
+    width:100%;
+    position:absolute;
+  }
+  
+  .boxs-center{
+    background:transparent;
+    width:90%;
+    padding:60px;
+    display: grid;
+    /* grid-template-columns: repeat(4, 1fr); */
+    -webkit-column-gap: 2rem;
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    z-index:999;
+  }
+  
+  .counters{
+      /* background:red; */
+      display:flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items: center;
+      padding:10px;
+      line-height:1.5rem;
+      color:var(--clr-white);
+  }
+  
+  .count-images{
+    width:50px!important;
+    height:50px!important;
+  }
+  
+  .counters h2{
+    font-weight:bold;
+    font-size:30px;
+    margin-top:20px;
+    font-family:arial;
+    font-weight:500;
+  }
+  
+  .counters p{
+    font-family:monospace;
+    font-weight:500;
+  }
+  
+  
+  @media screen and (min-width:676px){
+    .boxs-center{
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .boxs::after{
+      height:50vh;
+    }
+  }
+  
+  
+  @media screen and (min-width:992px){
+    .boxs-center{
+      height:50vh;
+      grid-template-columns:repeat(4, 1fr);
+    }
+    .boxs::after{
+      height:50vh;
+    }
+  }
+  
+  
+  @media screen and (max-width:675px){
+    .boxs-center{
+      grid-template-columns:1fr;
+    }
+  }
+  
+  
+  @media screen and (min-width:530px){
+    .boxs{
+      height:70vh!important;
+      /* background:yellow; */
+    }
+    .boxs::after{
+        height:70vh;
+    }
+  }
+  

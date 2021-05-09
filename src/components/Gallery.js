@@ -6,7 +6,7 @@ const Gallery = () => {
     return (
         <div className="gallery-container" >
             <div className="gallery">
-                <motion.div className="gallery__item gallery__item--1" 
+                <motion.div className="gallery__item gallery__item--1" data-aos="fade-right"
                      whileHover={{ scale:1.2}}
                      whileTap={{
                          scale:0.8,
@@ -17,7 +17,7 @@ const Gallery = () => {
                     <img src={image} alt="" className="gallery__img"/>
                 </motion.div>
 
-                <motion.div className="gallery__item gallery__item--2" 
+                <motion.div className="gallery__item gallery__item--2" data-aos="fade-down"
                     whileHover={{ scale:1.2}}
                     whileTap={{
                         scale:0.8,
@@ -28,7 +28,7 @@ const Gallery = () => {
                     <img src={image} alt="" className="gallery__img"/>
                 </motion.div>
 
-                <motion.div className="gallery__item gallery__item--3" 
+                <motion.div className="gallery__item gallery__item--3" data-aos="fade-up" 
                     whileHover={{ scale:1.2}}
                     whileTap={{
                         scale:0.8,
@@ -39,7 +39,7 @@ const Gallery = () => {
                     <img src={image} alt="" className="gallery__img"/>
                 </motion.div>
 
-                <motion.div className="gallery__item gallery__item--4" 
+                <motion.div className="gallery__item gallery__item--4" data-aos="fade-left"
                    whileHover={{ scale:1.2}}
                    whileTap={{
                        scale:0.8,

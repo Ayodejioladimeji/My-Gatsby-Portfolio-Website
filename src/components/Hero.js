@@ -53,11 +53,12 @@ const Hero = () => {
                 }}
               />
             </div>
-              <motion.button whileHover={{scale:1.1}}>
-                <Link to="/contact" className="btn" data-aos="fade-down">
-                  Get In Touch
-                </Link>
-              </motion.button> 
+
+            <motion.button whileHover="">
+              <Link to="/contact" className="btns effect04" data-aos="fade-down" data-sm-link-text="CLICK" target="_blank">
+                <span>Get In Touch</span>
+              </Link>
+            </motion.button> 
 
             <div data-aos="fade-up">
               <SocialLinks/>

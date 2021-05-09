@@ -12,6 +12,7 @@ import SEO from "../components/SEO"
 import Typewriter from 'typewriter-effect'
 
 import load from '../assets/dancing.gif'
+import Cards from "../components/Cards"
 
 
 export default () => {
@@ -48,8 +49,9 @@ export default () => {
         <Counter/>
         <Colors/>
         <Jobas/>
-        <Create/>
+        <Cards/>
         <Projects />
+        <Create/>
         <Blogs/>
     </Layout>
   )
