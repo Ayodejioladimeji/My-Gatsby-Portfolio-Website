@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, {useState, useEffect} from 'react'
 
 const getStorageTheme = () => {
-    let theme = 'light-theme';
+    let theme = 'dark-theme';
     if (localStorage.getItem('theme')) {
       theme = localStorage.getItem('theme');
     }
@@ -17,10 +17,10 @@ const Toggle = () => {
     const toggleSwitch = () => setIsOn(!isOn)
 
   const toggleTheme = () => {
-    if (theme === 'light-theme') {
-      setTheme('dark-theme');
-    } else {
+    if (theme === 'dark-theme') {
       setTheme('light-theme');
+    } else {
+      setTheme('dark-theme');
     }
   };
 
