@@ -13,6 +13,7 @@ import Typewriter from 'typewriter-effect'
 
 import load from '../assets/dancing.gif'
 import Cards from "../components/Cards"
+// import Hero2 from "../components/Hero2"
 
 
 export default () => {
@@ -45,6 +46,7 @@ export default () => {
     <Layout>
         <SEO title="Home" />
         <Hero/>
+        {/* <Hero2/> */}
         <Services/>
         <Counter/>
         <Colors/>
@@ -54,5 +56,5 @@ export default () => {
         <Create/>
         <Blogs/>
     </Layout>
-  )
+  ) 
 }

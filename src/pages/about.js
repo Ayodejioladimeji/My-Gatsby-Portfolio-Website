@@ -18,12 +18,12 @@ const About = () => {
                 <img src={image} alt="about-me" className="about-img" />
                 <article className="about-text">
                   <Title title={title} />
-                  <p data-aos="flip-right">{info}</p>
+                  <p data-aos="flip-right" data-aos-once="true">{info}</p>
                   <div className="about-stack">
                     {stack.map((data) => {
                       const { id, stack } = data
                       return (
-                        <span key={id} data-aos="flip-right">{stack}</span>
+                        <span key={id} data-aos="flip-right" data-aos-once="true">{stack}</span>
                       )
                     })}
                   </div>

@@ -6,7 +6,7 @@ import ScrollToTop from "react-scroll-to-top"
 const Footer = () => {
  
 
-  return (
+  return ( 
     <footer className="footer">
       <ScrollToTop smooth className="scroll"/>
       <div>

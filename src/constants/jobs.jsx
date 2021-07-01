@@ -1,9 +1,22 @@
 export default[
   {
+  "id": "recAGJfiU4C45aV0HL",
+  "order": 4,
+  "title": "FullStack Developer",
+  "dates": "JUNE 2021 - PRESENT",
+  "duties": [
+  "Responsible for end-to-end web app development and creative backend engineering",
+  "Developed a full-stack web applications which processed analyzed and rendered data visually.",
+  "Managed time-sensitive updates, including content changes and database updates",
+  "work with a team of creative designers and developers to build interfaces and meet objectives."
+  ],
+  "company": "LIGHTHILL"
+  },
+  {
   "id": "recAGJfiU4CeaV0HL",
   "order": 3,
   "title": "FrontEnd Developer",
-  "dates": "AUG 2020 - Present",
+  "dates": "AUG 2020 - MARCH 2021",
   "duties": [
   "Collaborated with Developers across Africa to work on projects using variety of tools which includes-:HTML, Javascript, Bootstrap, Css, React and Gatsby.",
   "Manage complex details about projects that require analyzing design requirements.",
