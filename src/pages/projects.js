@@ -7,7 +7,7 @@ import SEO from "../components/SEO"
 import data from '../constants/projects'
 
 const ProjectsPage = () => {
-  const [projects, setProjects] = useState(data);
+  const [projects] = useState(data);
 
 
 
@@ -15,7 +15,7 @@ const ProjectsPage = () => {
     <Layout>
       <SEO title="Projects" />
       <section className="projects-page">
-        <Title title="All Projects" data-aos="fade-up" />
+        <Title title="All Projects"/>
         <div className="section-center projects-center">
           {projects.map((project, index) => {
             return <Project key={index} {...project} />

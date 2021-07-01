@@ -464,7 +464,6 @@ THE SECTION OF THE SIDE BAR
   opacity: 0;
   transition: var(--transition);
   transform: translateY(100%);
-
 }
 
 .show-sidebar {
@@ -579,23 +578,6 @@ Sidebar Animation
 
 
 
-
-
-
-
-
-/*
-=============== 
-THE SECTION OF THE SERVICES
-===============
-*/
-
-
-
-
-
-
-
 /*
 =============== 
 Jobs
@@ -622,7 +604,6 @@ Jobs
   flex-direction: row;
   justify-content: center;
   margin-bottom: 4rem;
-  border-bottom:2px solid #00ff00;
   height:150px;
   transition: var(--transition);
 }

@@ -57,6 +57,7 @@ const Jobas = () => {
             }, 
           }} 
         /> 
+        
         <div className="jobs-center">
   
           <div className="btn-container">

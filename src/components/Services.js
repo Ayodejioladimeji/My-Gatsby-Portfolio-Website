@@ -12,11 +12,11 @@ const Services = () => {
         {services.map((service)=>{
           const {id, icon, title, text} = service;
           return(
-            <article key={id} className="service" data-aos="zoom-in">
+            <article key={id} className="service" data-aos="zoom-in" data-aos-once="true">
               {icon}
-              <h4 data-aos="fade-up">{title}</h4>
-              <div data-aos="fade-right" className="underline"></div>
-              <p data-aos="fade-down">{text}</p>
+              <h4 data-aos="fade-up" data-aos-once="true">{title}</h4>
+              <div data-aos="fade-right" data-aos-once="true" className="underline"></div>
+              <p data-aos="fade-down" data-aos-once="true">{text}</p>
             </article>
           )
         })}

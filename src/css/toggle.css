@@ -24,7 +24,7 @@ Global Styles
     --clr-shadow:transparent;
   }
   .light-theme {
-    --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a3);
+    --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a46b);
     --clr-font: #282c35;
     --clr-primary: #d23669;
     --clr-hero:transparent;
