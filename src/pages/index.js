@@ -42,6 +42,7 @@ export default () => {
       </main>
     )
   }
+  
   return(
     <Layout>
         <SEO title="Home" />
