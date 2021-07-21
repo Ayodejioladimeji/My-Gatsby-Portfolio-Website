@@ -1,6 +1,28 @@
 
 export default[
   {
+    "id": "recAGrffUtrheaV0J",
+    "order": 16,
+    "title": "Voting2023",
+    "stack": "REACT, CSS, FRAMER-MOTION, NODE, HEROKU, NETLIFY",
+    "description": "Voting2023 is an online voting application to securely store casted votes while preventing any form of tampering and multifactor authentication to verify eligibility while granting voters to easily securely cast their votes using various mobile devices from any location while also increasing votes trust towards the voting process and offer better transparency during voting process.",
+    "github": "https://github.com/Ayodejioladimeji",
+    "url": "https://voting2023.netlify.app",
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1626899897/portfolio/Capturet_cxxlwk.png",
+    "featured":true
+  },
+  {
+    "id": "recAGrffdw4heaV0J",
+    "order": 15,
+    "title": "LighthillNg",
+    "stack": "REACT, CSS, FRAMER-MOTION, REACT-ANIMATIONS, NODE, NODEMAILER ",
+    "description": "Lighthill Investment Company is a leading investment and financial company that provides a wide range of investment solutions, forex trading services, and real estate management. Our platforms are specifically designed to meet the needs of individual, corporate and institutional clients.",
+    "github": "https://github.com/Ayodejioladimeji",
+    "url": "https://lighthillng.com",
+    "image": "https://res.cloudinary.com/devsource/image/upload/v1626899836/portfolio/Capturey_z5swu1.png",
+    "featured":true
+  },
+  {
     "id": "recAGrffU4heaV0J",
     "order": 14,
     "title": "Zuri Chat",
@@ -9,7 +31,6 @@ export default[
     "github": "https://github.com/Ayodejioladimeji/chat-app",
     "url": "https://zurichat.netlify.app",
     "image": "https://res.cloudinary.com/devsource/image/upload/v1620538067/Screenshot_2021-05-09_at_6.25.39_AM_txpfzy.png",
-    "featured":true
   },
   {
     "id": "recAGrffU4heaV0J",
@@ -51,7 +72,6 @@ export default[
     "github": "https://github.com/Ayodejioladimeji/Home-and-Away",
     "url": "https://homeandaway.netlify.app",
     "image": "https://res.cloudinary.com/devsource/image/upload/v1614948374/portfolio/away_fqubqi.png",
-    'featured': true,
   },
   {
     "id": "recAGJfiU4heaV0H",

@@ -24,7 +24,8 @@ Global Styles
     --clr-shadow:transparent;
   }
   .light-theme {
-    --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a46b);
+    /* --clr-bcg:linear-gradient(250deg, #7b2ff7, #f207a46b); */
+    --clr-bcg:rgb(11, 11, 59);
     --clr-font: #282c35;
     --clr-primary: #d23669;
     --clr-hero:transparent;
@@ -33,7 +34,7 @@ Global Styles
     /* --clr-counter:transparent; */
     --clr-counter:#d2366a33;
     --clr-create:transparent;
-    --clr-create:linear-gradient(250deg, #7c2ff7a8, #f207a49a);
+    --clr-create:rgba(11, 11, 59, 0.658);
     --clr-image-border:#00ff00;
     --clr-btn:#fff;
     --clr-shadow:#fff;

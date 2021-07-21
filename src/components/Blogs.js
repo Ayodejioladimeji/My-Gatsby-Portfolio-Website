@@ -10,7 +10,7 @@ import round from '../assets/round.gif'
 export const Blogs = () => {
 
   const [loading, setLoading] = useState(true)
-  const [blogs, setBlogs] = useState(data);
+  const [blogs] = useState(data);
 
 
   useEffect(() => {

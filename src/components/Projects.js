@@ -19,7 +19,7 @@ const Projects = ({ title }) => {
       setLoading(false)
     }, 20000);
   }, [])
-
+ 
 
   if (loading) {
     return (
