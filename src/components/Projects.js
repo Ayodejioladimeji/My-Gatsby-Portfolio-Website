@@ -2,24 +2,20 @@ import React, { useState, useEffect } from "react"
 import Title from "./Title"
 import Project from "./Project"
 import { Link } from "gatsby"
-import data from '../constants/projects'
+import data from "../constants/projects"
 
-import roll from '../assets/roll.gif'
-
-
+import roll from "../assets/roll.gif"
 
 const Projects = ({ title }) => {
-
   const [loading, setLoading] = useState(true)
-  const [projects, setProjects] = useState(data);
-  let featuredProjects = projects.filter(item=> item.featured === true);
+  const [projects] = useState(data)
+  let featuredProjects = projects.filter(item => item.featured === true)
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false)
-    }, 20000);
+    }, 20000)
   }, [])
- 
 
   if (loading) {
     return (
@@ -30,10 +26,9 @@ const Projects = ({ title }) => {
     )
   }
 
-
   return (
     <section className="section projects">
-      <div style={{marginBottom:'70px'}}></div>
+      <div style={{ marginBottom: "70px" }}></div>
       <Title title={title} />
       <div className="section-center projects-center">
         {featuredProjects.map((project, index) => {
@@ -47,6 +42,5 @@ const Projects = ({ title }) => {
     </section>
   )
 }
-
 
 export default Projects

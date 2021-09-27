@@ -1,44 +1,26 @@
-import React, {useEffect} from "react"
+import React, { useEffect } from "react"
 // import Image from "gatsby-image"
-import Gallery from './Gallery'
+import Gallery from "./Gallery"
 import { Link } from "gatsby"
-import { graphql, useStaticQuery } from "gatsby"
+// import { graphql, useStaticQuery } from "gatsby"
 import SocialLinks from "../constants/socialLinks"
 
-import Aos from 'aos';
-import "aos/dist/aos.css";
-import Typewriter from 'typewriter-effect'
-import Toggle from './Toggle'
+import Aos from "aos"
+import "aos/dist/aos.css"
+import Typewriter from "typewriter-effect"
+import Toggle from "./Toggle"
 
-import Particles from './Particles'
+import Particles from "./Particles"
 import { motion } from "framer-motion"
 
-const query = graphql`
-  {
-    file(relativePath:{eq:"image.JPG"}){
-      childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
-
 const Hero = () => {
-  useEffect(()=>{
-    Aos.init({duration:1500})
-  }, []);
-
-  const {
-    file:{
-      childImageSharp:{fluid},
-    },
-  } = useStaticQuery(query);
+  useEffect(() => {
+    Aos.init({ duration: 1500 })
+  }, [])
 
   return (
     <header className="hero">
-       <Particles/> 
+      <Particles />
       <div className="section-center hero-center">
         <article className="hero-info">
           <div>
@@ -48,7 +30,11 @@ const Hero = () => {
             <div className="type">
               <Typewriter
                 options={{
-                  strings: ['I Design...', 'I Create...', 'I transform ideas into Reality...'],
+                  strings: [
+                    "I Design...",
+                    "I Create...",
+                    "I transform ideas into Reality...",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
@@ -56,21 +42,26 @@ const Hero = () => {
             </div>
 
             <motion.button>
-              <Link to="/contact" className="btns effect04" data-aos="fade-down" data-sm-link-text="CLICK" target="_blank">
+              <Link
+                to="/contact"
+                className="btns effect04"
+                data-aos="fade-down"
+                data-sm-link-text="CLICK"
+                target="_blank"
+              >
                 <span>Get In Touch</span>
               </Link>
-            </motion.button> 
+            </motion.button>
 
             <div data-aos="fade-up">
-              <SocialLinks/>
+              <SocialLinks />
             </div>
-           
           </div>
         </article>
-          
-          <Gallery/>
+
+        <Gallery />
         {/* <Image fluid={fluid} className="hero-img"/> */}
-        <Toggle/>
+        <Toggle />
       </div>
     </header>
   )

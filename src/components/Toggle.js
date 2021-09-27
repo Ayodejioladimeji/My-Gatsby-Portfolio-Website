@@ -1,48 +1,56 @@
-import { motion } from 'framer-motion';
-import React, {useState, useEffect} from 'react'
+import { motion } from "framer-motion"
+import React, { useState, useEffect } from "react"
 
 const getStorageTheme = () => {
-    let theme = 'dark-theme';
-    if (localStorage.getItem('theme')) {
-      theme = localStorage.getItem('theme');
-    }
-    return theme;
-  };
-  
+  let theme = "dark-theme"
+  if (localStorage.getItem("theme")) {
+    theme = localStorage.getItem("theme")
+  }
+  return theme
+}
 
 const Toggle = () => {
-    const [theme, setTheme] = useState(getStorageTheme());
-    const[isOn, setIsOn] = useState(false);
+  const [theme, setTheme] = useState(getStorageTheme())
+  const [isOn, setIsOn] = useState(false)
 
-    const toggleSwitch = () => setIsOn(!isOn)
+  const toggleSwitch = () => setIsOn(!isOn)
 
   const toggleTheme = () => {
-    if (theme === 'dark-theme') {
-      setTheme('light-theme');
+    if (theme === "dark-theme") {
+      setTheme("light-theme")
     } else {
-      setTheme('dark-theme');
+      setTheme("dark-theme")
     }
-  };
+  }
 
   useEffect(() => {
-    document.documentElement.className = theme;
-    localStorage.setItem('theme', theme);
-  }, [theme]);
+    document.documentElement.className = theme
+    localStorage.setItem("theme", theme)
+  }, [theme])
 
-    return (
-      <div className="switch togg" data-isOn={isOn} onClick={() => {toggleSwitch() ;  toggleTheme()}}>
-        <motion.div style={{background:isOn ? "blue" : "#00ff00"}} className="handle" layout transition={spring}/>
-      </div>
-        // <button className="togg" onClick={toggleTheme}>
-        //     SWITCH
-        // </button>
-    )
+  return (
+    <div
+      className="switch togg"
+      data-isOn={isOn}
+      onClick={() => {
+        toggleSwitch()
+        toggleTheme()
+      }}
+    >
+      <motion.div
+        style={{ background: isOn ? "blue" : "#00ff00" }}
+        className="handle"
+        layout
+        transition={spring}
+      />
+    </div>
+  )
 }
 
 export default Toggle
 
 const spring = {
-  type:"spring",
-  stiffness:700,
-  damping:30
-};
+  type: "spring",
+  stiffness: 700,
+  damping: 30,
+}
